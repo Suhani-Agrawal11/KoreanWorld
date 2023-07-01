@@ -1,0 +1,296 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* background-color: rgb(115, 108, 108); */
+}
+.taskbar{
+    background-color: rgb(58, 58, 58);
+    color: azure;
+    margin: 2px 5px;
+    width: 10%;
+    height: 95vh;
+    border: 1px solid black;
+    box-shadow: 1px 5px 10px 5px rgb(141, 140, 140);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+.menu{
+    width: 90%;
+    margin: 5px;
+    text-align: center;
+    border-bottom: 1px solid rgb(99, 98, 98);
+    padding: 20px 0px;
+}
+.menu:hover{
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow:1px 2px 3px 5px rgb(171, 169, 169); ;
+    scale: .9;
+}
+.sliderFrame{
+    overflow: hidden;
+    height: 600px;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    width: 80%;
+    background-image: url("./assets/img1.jpg");
+    background-size: 100% 100%;
+    transform: translate(-70%,-50%);
+    border-radius: 5px;
+    box-shadow: 10px 5px 20px 5px rgb(0, 0, 0);
+    animation: slider 50s infinite linear;
+}
+@keyframes slider{
+    0%{background-image: url("./assets/slider/img1.jpg");}
+    10%{background-image: url("./assets/slider/img2.jpg");}
+    20%{background-image: url("./assets/slider/img3.jpg");}
+    30%{background-image: url("./assets/slider/img4.jpg");}
+    40%{background-image: url("./assets/slider/img5.jpg");}
+    50%{background-image: url("./assets/slider/img6.jpg");}
+    60%{background-image: url("./assets/slider/img7.jpg");}
+    70%{background-image: url("./assets/slider/img8.jpg");}
+    80%{background-image: url("./assets/slider/img9.jpg");}
+    90%{background-image: url("./assets/slider/img10.jpg");}
+    100%{background-image: url("./assets/slider/img11.jpg");}
+}
+/* .dishes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+} */
+.container{
+    width: 82%;
+    margin: 15px;
+    transform: translate(15%);
+    overflow-y: visible;
+    display: flex;
+    flex-direction: column;
+}
+.Food{
+    padding: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    text-decoration: underline;
+}
+.meal{
+    width: 100%;
+    height: 276px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.card{
+    height: 100%;
+    padding: 20px;
+    margin: 0 20px 20px 40px;
+    width: 300px;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 0 2px 3px rgb(173, 173, 173);
+}
+.cardimg{
+    width: 90%;
+    height: 60%;
+}
+.cardcontent{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+.rating{
+    color: rgb(247, 195, 6);
+    font-size: 10px;
+    text-align: center;
+    padding: 5px;
+}
+.name{
+    align-items: left;
+    padding: 10px;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+
+}
+.card:hover{
+    scale: 1.1;
+    cursor: default;
+}
+.buy{
+    margin-left: 50px;
+    border-radius: 5px;
+    background-color: rgb(55, 242, 22);
+    padding: 5px;
+}
+.buy:hover{
+    cursor: pointer;
+    scale: .9;
+}
+/* https://codepen.io/GeoffreyCrofte/pen/OJMaMxa */
+.roomcontainer{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    margin: 100px 0 0 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rooms{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.rooms img{
+    position: absolute;
+    top: -25%;
+    z-index: 1;
+    transition: .2s;
+    -webkit-filter: drop-shadow(0 8px 16px rgba(0 0 0 .3));
+}
+.roomcard{
+    margin:0 10px 40px 10px;
+    position: relative;
+    color: #fff;
+    width: 280px;
+    height: 350px;
+    background: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.content{
+    width: 100%;
+    height: 240px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Poppins",sans-serif;
+}
+.content h3{
+    margin: 20px 0;
+}
+.content pre{
+    font-size: 13px ;
+    margin: 20px 0;
+    color: rgb(194, 194, 194);
+}
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.details h4{
+    margin: 20px 0;
+}
+.details span{
+    color: rgb(247, 195, 6);
+}
+.content button{
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: none;
+    background: rgb(41, 215, 10);
+    font-family: "Poppins",sans-serif;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.rooms:hover img{
+    transform: scale(1.1);
+}
+.title{
+    padding: 20px;
+    font-size: 80px;
+    font-family: 'Caprasimo', cursive;;
+    color: rgb(110, 110, 110);
+}
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.who{
+    margin: 50px 40px;
+    padding: 40px;
+    width: 40%;
+    box-shadow:  1px 5px 10px 5px rgb(141, 140, 140);
+    border-radius: 10px;
+}
+.whohead{
+    margin: 50px 40px;
+    padding: 40px;
+    width: 40%;
+    box-shadow:  1px 5px 10px 5px rgb(220, 218, 218);
+    border-radius: 50%;
+    text-align: center;
+}
+.whohead h1{
+    color: rgb(65, 65, 90);
+}
+.who h1{
+    color: rgb(2, 2, 2);
+}
+.who h3{
+    font-family: 'Belanosima', sans-serif;
+    padding: 20px;
+
+}
+.contact{
+    padding: 50px 20px;
+    font-size: 20px;
+    font-family: 'Caprasimo', cursive;;
+    color: rgb(40, 40, 40);
+}
+.via{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+.through{
+    display: flex;
+    margin: 0 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+.through:hover{
+    cursor: pointer;
+}
